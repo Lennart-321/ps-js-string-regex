@@ -18,9 +18,11 @@ function isEqIgnoreDiacritic(s1, s2) {
   });
 }
 function sortStringStartingWithNumbers(strs) {
-    let copy = strs.slice();
-    copy.sort((a, b) => s1.localeCompare(s2, undefined /*default locale*/, {
-        numeric: true
-    }));
-  });
+  let copy = strs.slice();
+  copy.sort((a, b) =>
+    a.localeCompare(b, undefined /*default locale*/, {
+      numeric: true,
+    })
+  );
+}
 console.log(isEqIgnoreCase("AbCd", "abcd"));
